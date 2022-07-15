@@ -38,7 +38,7 @@ h2 {
   z-index: 9;
 }
 
-#modes {
+svg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -47,11 +47,6 @@ h2 {
   height: auto;
   opacity: 0.95;
   z-index: 2;
-}
-
-#modes svg {
-  width: 100%;
-  height: auto;
 }
 
 .first {
@@ -184,12 +179,16 @@ h2 {
     font-size: 2em;
   }
 
-  #modes {
+  svg {
     width: 90vw;
   }
 
   #bug {
     width: 50px;
     animation: rolling linear 20s infinite;
+  }
+
+  #anchorBtn {
+    bottom: -100px;
   }
 }
