@@ -38,7 +38,7 @@ h2 {
   z-index: 9;
 }
 
-svg {
+#modes {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -47,6 +47,11 @@ svg {
   height: auto;
   opacity: 0.95;
   z-index: 2;
+}
+
+#modes svg {
+  width: 100%;
+  height: auto;
 }
 
 .first {
@@ -110,6 +115,7 @@ svg {
 }
 
 #bug {
+  display: block;
   color: aliceblue;
   width: 70px;
   height: auto;
@@ -170,7 +176,20 @@ svg {
 /* Media queries */
 
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+  h1 {
+    font-size: 6em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  #modes {
+    width: 90vw;
+  }
+
+  #bug {
+    width: 50px;
+    animation: rolling linear 20s infinite;
   }
 }
