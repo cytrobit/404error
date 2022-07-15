@@ -162,6 +162,7 @@ svg {
   mix-blend-mode: screen;
   text-shadow: none;
   z-index: 4;
+  transition: .3s;
 }
 
 #anchorBtn:hover {
